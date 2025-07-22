@@ -2,15 +2,12 @@
   "name": "front-end",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mohammed-donia.github.io/BookEase-React",
-   "type": "module",
+     "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.11",
