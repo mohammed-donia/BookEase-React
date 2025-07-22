@@ -3,16 +3,16 @@ import { useParams } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import { assets } from '../assets/assets';
 
-// دالة لتحويل الوقت "HH:MM" 24 ساعة إلى 12 ساعة مع AM/PM
+
 function convertTimeToAmPm(time24) {
   const [hourStr, minute] = time24.split(':');
   let hour = parseInt(hourStr, 10);
   const ampm = hour >= 12 ? 'PM' : 'AM';
-  hour = hour % 12 || 12; // تحويل 0 إلى 12
+  hour = hour % 12 || 12; 
   return `${hour}:${minute} ${ampm}`;
 }
 
-// مكون RelatedDoctors مع تصميم محسّن
+
 const RelatedDoctors = ({ docId, speciality }) => {
   const { doctors } = useContext(AppContext);
 

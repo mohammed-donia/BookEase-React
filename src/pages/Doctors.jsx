@@ -39,7 +39,7 @@ const Doctors = () => {
       </p>
 
       <div className="flex flex-col sm:flex-row items-start gap-6">
-        {/* زر إظهار/إخفاء الفلاتر في الموبايل */}
+        {/* button filter*/}
         <button
           className="py-2 px-4 border border-gray-300 rounded text-sm sm:hidden bg-white shadow-sm"
           onClick={() => setShowFilter(prev => !prev)}
@@ -47,7 +47,7 @@ const Doctors = () => {
           {showFilter ? 'Hide Filters' : 'Show Filters'}
         </button>
 
-        {/* قائمة الفلاتر */}
+        {/*menu filter */}
         <div className={`flex flex-col gap-3 text-sm ${showFilter ? 'block' : 'hidden'} sm:block`}>
           {specialties.map(spec => {
             const isActive = speciality === spec;
@@ -67,7 +67,7 @@ const Doctors = () => {
           })}
         </div>
 
-        {/* بطاقات الأطباء */}
+        {/* card doctors*/}
         <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {filteredDoctors.length === 0 ? (
             <p className="text-gray-500 col-span-full text-center">No doctors found.</p>
@@ -75,7 +75,7 @@ const Doctors = () => {
             filteredDoctors.map((doc, index) => (
               <div
                 key={index}
-                onClick={() => navigate(`/appointment/${doc._id}`)} // ✅ رابط صفحة الحجز
+                onClick={() => navigate(`/appointment/${doc._id}`)} 
                 className="border border-gray-200 rounded-xl overflow-hidden cursor-pointer hover:-translate-y-1 transition-transform duration-300 bg-white shadow-md"
               >
                 <img className="w-full h-48 object-cover bg-[#EFF6FF]" src={doc.image} alt={doc.name} />

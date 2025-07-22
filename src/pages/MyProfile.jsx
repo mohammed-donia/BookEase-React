@@ -20,7 +20,7 @@ const MyProfile = () => {
   return (
     <div className="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-xl text-gray-800 font-sans">
       
-      {/* صورة الملف الشخصي */}
+      {/* image profile*/}
       <div className="flex flex-col items-center">
         <img
           className="w-36 h-36 rounded-full shadow-lg object-cover border-4 border-[#0B7285]"
@@ -48,7 +48,7 @@ const MyProfile = () => {
 
       <hr className="my-8 border-gray-300" />
 
-      {/* معلومات الاتصال */}
+      {/* info contact */}
       <section>
         <h2 className="text-xl font-bold text-[#0B7285] mb-4 border-b-2 border-[#0B7285] pb-1">
           Contact Information
@@ -115,7 +115,7 @@ const MyProfile = () => {
 
       <hr className="my-8 border-gray-300" />
 
-      {/* المعلومات الأساسية */}
+      {/* info keys */}
       <section>
         <h2 className="text-xl font-bold text-[#0B7285] mb-4 border-b-2 border-[#0B7285] pb-1">
           Basic Information
@@ -161,7 +161,7 @@ const MyProfile = () => {
         </div>
       </section>
 
-      {/* زر التعديل / الحفظ */}
+      {/* button edit */}
       <div className="mt-12 flex justify-center">
         {
           isEdit

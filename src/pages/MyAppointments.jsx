@@ -26,7 +26,7 @@ const MyAppointments = () => {
               key={idx}
               className="flex flex-col sm:flex-row items-center bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 p-6 gap-8"
             >
-              {/* صورة الدكتور مع ظل جميل من طرف */}
+              {/*image card and showdo */}
               <div
                 className="flex-shrink-0 w-full sm:w-48 h-[40vh] rounded-lg overflow-hidden relative"
                 style={{
@@ -39,7 +39,7 @@ const MyAppointments = () => {
                   alt={doc.name}
                   className="w-full h-full object-cover object-center rounded-lg"
                 />
-                {/* تأثير ضوء ناعم من الطرف */}
+                {/* hover  */}
                 <div
                   style={{
                    
@@ -50,7 +50,7 @@ const MyAppointments = () => {
                 />
               </div>
 
-              {/* بيانات الدكتور */}
+              {/* info doctors*/}
               <div className="flex-1 text-gray-700 flex flex-col justify-between h-full">
                 <div>
                   <h3 className="text-2xl font-semibold text-gray-900">{doc.name}</h3>
@@ -67,7 +67,7 @@ const MyAppointments = () => {
                   </p>
                 </div>
 
-                {/* الأزرار */}
+                {/* buttons*/}
                 <div className="mt-6 flex gap-4">
                   <button className="flex-1 py-3 rounded-lg bg-[#287094] text-white font-semibold hover:bg-[#1f5a73] transition">
                     Pay Online

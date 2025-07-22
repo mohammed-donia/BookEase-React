@@ -5,27 +5,27 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-[#d2e8ef] px-6 md:px-24 py-16 flex flex-col justify-center">
 
-      {/* العنوان */}
+      {/*address*/}
       <header className="text-center mb-16">
         <p className="text-4xl font-extrabold  text-[#287094] tracking-wide">
           CONTACT <span className="text-gray-800 font-semibold">US</span>
         </p>
       </header>
 
-      {/* المحتوى الرئيسي */}
+      {/*main section */}
       <main className="flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-24">
 
-        {/* صورة التواصل */}
+        {/*image */}
         <img
           src={assets.contact_image}
-          alt="صورة فريق الدعم والتواصل"             
+          alt="image comme"             
           className="w-full max-w-md rounded-2xl shadow-lg object-cover border border-gray-200"
         />
 
-        {/* معلومات الاتصال */}
+        {/* info */}
         <section className="max-w-lg flex flex-col gap-10 bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
 
-          {/* مكتبنا */}
+          {/* office*/}
           <div>
             <h2 className="text-2xl font-semibold mb-4 text-[#287094]">
               OUR OFFICE
@@ -39,7 +39,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* فرص العمل */}
+          {/*prescript */}
           <div>
             <h2 className="text-2xl font-semibold mb-4 text-[#287094]">
               CAREERS AT PRESCRIPTO
